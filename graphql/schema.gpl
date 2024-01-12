@@ -1,0 +1,16 @@
+type Query {
+    availableProperties(city: String!): [Property!]!
+}
+
+type Property {
+    description: String!
+    address: Address!
+    available: Boolean
+}
+
+type Address {
+    street: String!
+    city: String!
+    state: String!
+    zipCode: Int!
+}
